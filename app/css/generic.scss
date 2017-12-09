@@ -1,0 +1,376 @@
+@import 'variable';
+*{
+    font-family: $font-family;
+}
+
+*,
+.box-sizing-box {
+    box-sizing: border-box;
+}
+
+.default-bg-color {
+    background-color: $primary-bg-color;
+}
+
+.primary-bg-color {
+    background-color: $primary-color;
+}
+
+.primary-fg-color {
+    color: $primary-color;
+}
+
+.secondary-bg-color {
+    background-color: $secondary-color;
+}
+
+.secondary-fg-color {
+    color: $secondary-color;
+}
+
+.white-bg-color {
+    background-color: $white-color;
+}
+
+.white-fg-color {
+    color: $white-color;
+}
+
+.dull-bg-color {
+    background-color: $dull-color;
+}
+
+.dull-fg-color {
+    color: $dull-color;
+}
+
+.text-align-center {
+    text-align: $center;
+}
+
+.text-align-left {
+    text-align: $left;
+}
+
+.text-align-right {
+    text-align: $right;
+}
+
+.float-right {
+    float: $right;
+}
+
+.float-none {
+    float: $none;
+}
+
+.float-left {
+    float: $left;
+}
+
+.display-inline {
+    display: $display-inline-block;
+}
+
+.display-block {
+    display: $display-block;
+}
+
+.display-none {
+    display: $display-none;
+}
+
+.p-relative {
+    position: $p-relative;
+}
+
+.p-fixed {
+    position: $p-fixed;
+}
+
+.p-absolute {
+    position: $p-absolute;
+}
+
+.padding-xsmall {
+    padding: $size-4px;
+}
+
+.padding-small {
+    padding: $size-8px;
+}
+
+.padding-medium {
+    padding: $size-12px;
+}
+
+.padding-large {
+    padding: $size-16px;
+}
+
+.padding-xlarge {
+    padding: $size-20px;
+}
+
+.no-left-padding {
+    padding-left: $size-0px !important;
+}
+
+.no-right-padding {
+    padding-right: $size-0px !important;
+}
+
+.no-top-padding {
+    padding-top: $size-0px !important;
+}
+
+.no-bottom-padding {
+    padding-bottom: $size-0px !important;
+}
+
+.no-vertical-padding {
+    @extend .no-bottom-padding;
+    @extend .no-top-padding;
+}
+
+.no-horizontal-padding {
+    @extend .no-left-padding;
+    @extend .no-right-padding;
+}
+
+.margin-xsmall {
+    margin: $size-4px;
+}
+
+.margin-small {
+    margin: $size-8px;
+}
+
+.margin-medium {
+    margin: $size-12px;
+}
+
+.margin-large {
+    margin: $size-16px;
+}
+
+.margin-xlarge {
+    margin: $size-20px;
+}
+
+.no-left-margin {
+    margin-left: $size-0px !important;
+}
+
+.no-right-margin {
+    margin-right: $size-0px !important;
+}
+
+.no-top-margin {
+    margin-top: $size-0px !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: $size-0px !important;
+}
+
+.no-vertical-margin {
+    @extend .no-bottom-margin;
+    @extend .no-top-margin;
+}
+
+.no-horizontal-margin {
+    @extend .no-left-margin;
+    @extend .no-right-margin;
+}
+
+.no-margin{
+    margin: 0px !important;
+}
+
+.required-fg-color {
+    color: $required-color;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.z-index-4 {
+    z-index: 4;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.z-index-6 {
+    z-index: 6;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.width-100ps {
+    width: 100%;
+}
+
+.force-full-width,
+.full-width {
+    @extend .width-100ps;
+    @extend .display-inline;
+    @extend .float-left;
+}
+
+.force-full-width {
+    width: 100% !important;
+}
+
+body {
+    margin-top: 80px;
+    @extend .box-sizing-box;
+    @extend .default-bg-color;
+}
+
+.table-action-button button {
+    @extend .display-inline;
+    @extend .float-left;
+}
+
+button.btn {
+    margin: 2px;
+}
+
+em {
+    @extend .required-fg-color;
+}
+
+.hide-elem {
+    @extend .display-none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.white-space-initial {
+    white-space: initial;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.as-link {
+    @extend .secondary-fg-color;
+    @extend .font-bold;
+    @extend .cursor-pointer;
+}
+
+.input-label {
+    @extend .font-xsmall;
+    margin-bottom: 3px;
+}
+
+.top-0 {
+    top: $size-0px;
+}
+
+.left-0 {
+    left: $size-0px;
+}
+
+.right-0 {
+    right: $size-0px;
+}
+
+.bottom-0 {
+    bottom: $size-0px;
+}
+
+.vertical-middle {
+    vertical-align: $middle;
+}
+
+.font-small-icon {
+    font-size: $size-18px;
+}
+
+.font-medium-icon {
+    font-size: $size-24px;
+}
+
+.font-large-icon {
+    font-size: $size-32px;
+}
+
+.line-height-normal {
+    line-height: normal;
+}
+
+.font-xxxsmall {
+    font-size: $size-8px;
+}
+.font-xxsmall {
+    font-size: $size-10px;
+}
+.font-xsmall {
+    font-size: $size-12px;
+}
+
+.font-small {
+    font-size: $size-14px;
+}
+
+.font-medium {
+    font-size: $size-16px;
+}
+
+.font-large {
+    font-size: $size-18px;
+}
+
+.font-xlarge {
+    font-size: $size-24px;
+}
+
+.no-border {
+    border: $size-0px;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.outline-none {
+    outline: $none;
+}
+
+.transition-ease-in {
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+}
+
+.transition-ease-out {
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.default-border-1px {
+    border: 1px solid $dull-color;
+}
+
+.default-border-color {
+    border-color: $dull-color;
+}

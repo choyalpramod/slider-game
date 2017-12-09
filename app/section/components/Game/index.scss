@@ -1,0 +1,58 @@
+@import '../../../css/variable';
+
+$quare-width: 40px;
+$game-border-type: 1px solid #ccc;
+.game{
+    border-radius: 5px;
+    border: $game-border-type;
+
+    input{
+        min-width: 200px;
+        width: 100%;
+        background-color: #eee;
+        height: 50px;
+    }
+
+    .table{
+        .table-row{
+            .table-col{
+                height: $quare-width;
+                width: $quare-width;
+                line-height: $quare-width;
+                overflow: hidden;
+                border-left: $game-border-type;
+                border-bottom: $game-border-type;
+                margin-top: -2px;
+            }
+            .table-col:last-child{
+                border-right: $game-border-type;
+            }
+            .table-col.active{
+                background-color: #eee;
+                box-shadow: inset 0px 0px 4px 2px #9090ce;
+            }
+            .table-col:hover{
+                background-color: #eee;
+            }
+        }
+        .table-row:first-child{
+            .table-col{
+                border-top: $game-border-type;
+            }
+        }            
+    }
+
+    .bottom-toolbar{
+        .icon{
+            font-size: 24px;
+            padding: 10px;
+            color: grey;  
+        }
+        .icon.disable{
+            color: #ccbebe;
+        }
+        .icon:last-child{
+            float: right;
+        }
+    }
+}
